@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<body>
+    <p>{{content}}</p>
+    {% if bool %}
+        <p>{{list.0}}</p> <!--для получения элем. из списка не используется [0] а просто ставится точка (list.0)-->
+        <p>{{dict.second}}</p> <!--для получения знач. в словарях также используется точка (dict.first)-->
+    {% endif %}
+</body>
+</html>
